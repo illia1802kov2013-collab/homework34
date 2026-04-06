@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+           background-color: aqua;
+           color: blue;
+           width: 100%;
+              height: 100px;
+              border: 1px dotted blue;
+        }
+   .hero{
+    background-color: yellowgreen;
+    color: green;
+    width: 100%;
+    height: 300px;
+    border : 1px dotted green;
+    margin-top: 10px;
+    }
+    .about{
+        background-color: lightcoral;
+        color: pink;
+        width: 100%;
+        height: 200px;
+            border: 1px dotted pink;
+           margin-top: 10px; 
+    }
+    .gallery{
+        background-color: lightblue;
+        color: blue;
+        width: 100%;
+        height: 400px;
+            border: 1px dotted blue;
+    }
+    .footer{
+        background-color: lightgray;
+        color: gray;
+        width: 100%;
+        height: 100px;
+        border: 1px dotted gray;
+        margin-top: 10px;
+    }
+    .cardfeatured {
+        
+        background-color: blue;
+        color: darkblue;
+        width: 900px;
+        height: 100px;
+        border: 1px dotted darkblue;
+    }
+    button{
+        background-color: darkblue;
+        color: white;
+        width: 300px;
+        height: 30px;
+       
+    }
+     .card1 {
+    
+        background-color: blue;
+        color: darkblue;
+        width: 350px;
+        height: 100px;
+          border: 1px dotted darkblue;
+    }
+     .card2 {
+   
+
+        background-color: blue;
+        color: darkblue;
+        width: 300px;
+        height: 100px;
+          border: 1px dotted darkblue;
+    }
+     .card3 {
+       
+        background-color: blue;
+        color: darkblue;
+        width: 300px;
+        height: 100px;
+          border: 1px dotted darkblue;
+    }
+     .card4 {
+        
+        background-color: blue;
+        color: darkblue;
+        width: 300px;
+        height: 100px;
+          border: 1px dotted darkblue;
+    }
+     .card5 {
+     
+        background-color: blue;
+        color: darkblue;
+        width: 300px;
+        height: 100px;
+        border: 1px dotted blue;
+          border: 1px dotted darkblue;
+    }
+   
+         .gallery {
+            margin-top: 10px;
+         display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        "h2 h2 h2 h2 h2"
+        "cardfeatured cardfeatured cardfeatured card1 card1"
+        "card2 card3 card4 card5 card5";
+    gap: 20px;
+         }
+         .h2{grid-area:h2 ;}
+        .cardfeatured { grid-area: cardfeatured; }
+.card1 { grid-area: card1; }
+.card2 { grid-area: card2; }
+.card3 { grid-area: card3; }
+.card4 { grid-area: card4; }
+.card5 { grid-area: card5; }
+         .span2 {
+           background-color: blue;
+        color: darkblue;
+        width: 900px;
+        height: 30px;
+        text-align: center;
+         }
+         p{
+            height: 30px;
+             text-align: center;
+             background-color: blue;
+                color: darkblue;
+         }
+         .featured{
+            width: 900px;
+         }
+         .button{
+            width: 350px;
+         }
+    </style>
+</head>
+<body>
+     <header class="header">це header</header>
+  <section class="hero">hero section</section>
+  <section class="about">about section</section>
+  <section class="gallery">
+    <h2 class="h2">Gallery</h2>
+    <div class="cardfeatured">
+        <p class="span2">featured span2 </p> 
+     <button class="featured">переглянути</button>
+    </div>
+    <div class="card1"> 
+        <p>project </p> 
+        <button class="button">переглянути</button>
+    </div>
+       <div class="card2"> 
+        <p>project </p> 
+        <button>переглянути</button>
+       </div>
+        <div class="card3">
+            <p>project </p>  
+            <button>переглянути</button>
+        </div>
+         <div class="card4">
+            <p>project </p> 
+            <button>переглянути</button>
+         </div>
+          <div class="card5">
+            <p>project </p>
+            <button>переглянути</button>
+          </div>   
+  </section>
+  <footer class="footer">footer</footer>
+</body>
+</html>
